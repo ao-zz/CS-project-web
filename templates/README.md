@@ -1,4 +1,5 @@
-# 运行说明 #
+# 说明 #
+flask的web开发理念是多用模板，所以找到的教程示例的html很多是基于模板（base.html）的。html存放位置也是在templates（不要改名）目录下 <br>
 python代码中用到一些扩展，需要在cmd下进行安装（参考老师的pdf中flask的安装）。<br>
 1. pip install flask-bookstrap <br>
 &nbsp;&nbsp;&nbsp;&nbsp;用于支持base.html的导航栏模板，若前端不需要可删去<br>
