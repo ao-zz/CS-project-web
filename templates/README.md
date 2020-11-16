@@ -8,7 +8,7 @@ python代码中用到一些扩展，需要在cmd下进行安装（参考老师�
 &nbsp;&nbsp;&nbsp;&nbsp;会自动安装moment.js，无须另下 <br>
 3. pip install flask-wtf <br>
 
-安装扩展完成后，按老师的pdf中的方法，在cmd或pyCharm/vscode等下运行app.py，再用浏览器访问http://127.0.0.1:5000/等页面即可 <br>
+安装扩展完成后，按老师的pdf中的方法，在cmd或pyCharm/vscode等下运行app.py，再用浏览器访问[http://127.0.0.1:5000/](http://127.0.0.1:5000/)等页面即可 <br>
 
 # 关于用例中的html内容的说明 #
 ## base.html ##
@@ -31,7 +31,6 @@ python代码中用到一些扩展，需要在cmd下进行安装（参考老师�
     {{ moment(current_time).fromNow(refresh=True) }}
 显示距离该时刻过去的时间（自动更新，同样可设置格式）<br>
 后端只负责发送时间数据，如何显示由前端决定。<br>
-（方案）
 
 ## 404.html ##
 输入任何无对应html的网址，将跳转到此页面<br>
