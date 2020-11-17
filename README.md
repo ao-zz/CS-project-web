@@ -1,5 +1,6 @@
 # CS-project-web
 一份极简陋的后端测试用例，为《flask web 开发》第4章（不含）之前的内容。因为html怎么写的不是后端要关心的事，所以用例里的html不用细看，只要关心教程里的python怎么写、用什么扩展就好（然而这份用例里的.py是肉眼可见的简陋……可以参考教材的配套代码库https://github.com/miguelgrinberg/flasky  或者直接CSDN找现成的说不定效率更高……）<br>
+各文件夹的内容在相应的README中说明 <br>
 目前后端工作方向：<br> 
 1. 根据user_id**发送**需要的数据包（flask开发）（可能是前端目前最需要后端做的） <br>
 2. 根据user_id，**通过flask工具**从MySql中**查找**（后续再实现新建、修改、删除）对应的信息（flask-MySql） <br>
