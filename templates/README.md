@@ -20,6 +20,7 @@ python代码中用到一些扩展，需要在cmd下进行安装（参考老师�
 > scripts块：接收从后端发送来的**时间**信息（用例见index.html）<br>
 > head块：显示浏览器标签页的小图标（同济校徽）<br>
 > content块：内容。模板中为空。<br>
+其他的html只需要在开头加上entends语句（见其他html）就可以引入base.html作为模板，并在相应的块填入内容 <br>
 
 ## index.html ##
 目前只有时间显示功能（由flask-moment扩展支持）<br>
