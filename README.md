@@ -1,5 +1,6 @@
 # CS-project-web
 一份极简陋的后端测试用例，为《flask web 开发》第4章（不含）之前的内容。<br> 
+注：书中提到的部分扩展的名称已经更新，如flask.ext.bootstrap -> flask_bootstrap（后面出现的所有.ext.都改为_）
 因为html怎么写的不是后端要关心的事，所以用例里的html不用细看，只要关心教程里的python怎么写、用什么扩展就好（然而这份用例里的.py是肉眼可见的简陋……可以参考教材的配套代码库https://github.com/miguelgrinberg/flasky  或者直接CSDN找现成的说不定效率更高……）<br>
 各文件夹的内容在相应的README中说明 <br>
 目前后端工作方向：<br> 
