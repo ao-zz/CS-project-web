@@ -40,7 +40,7 @@ python代码中用到一些扩展，需要在cmd下进行安装（参考老师�
 语句
 
     {% if user_id %}
-是Jinja2的控制语句，等价于`{% if user_id is defined %}`。这里的变量名，前后端需要保持一致 <br>
+是Jinja2的控制语句，当 `user_id is defined and not empty and not false` 时判断为 True。变量名（如user_id），前后端需要保持一致 <br>
 更多jinja2的控制语句可见https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures <br>
 
 ## 404.html ##
