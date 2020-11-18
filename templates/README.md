@@ -10,12 +10,13 @@ python代码中用到一些扩展，需要在cmd下进行安装（参考老师�
 &nbsp;&nbsp;&nbsp;&nbsp;计算机需要连接网络 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;会自动安装moment.js，无须另下 <br>
 3. pip install flask-wtf <br>
+&nbsp;&nbsp;&nbsp;&nbsp;web表单处理
 
 安装扩展完成后，按老师的pdf中的方法，在cmd或pyCharm/vscode等下运行app.py，再用浏览器访问[http://127.0.0.1:5000/](http://127.0.0.1:5000/)等页面即可 （不运行app.py而直接打开html是看不到效果的）<br>
 
 # 关于用例中的html内容的说明 #
 ## base.html ##
-一个模板。可以看了其他html再看这个html。包含很多模块（block），每个block都以`{% block 模块名 %}`开始，以`{% end block %}`结束。
+一个模板（Jinja2格式）。可以看了其他html再看这个html。包含很多模块（block），每个block都以`{% block 模块名 %}`开始，以`{% end block %}`结束。
 > navbar块：一个简易导航栏，由flask-bootstrap扩展支持。<br>
 > scripts块：接收从后端发送来的**时间**信息（用例见index.html）<br>
 > head块：显示浏览器标签页的小图标（同济校徽）<br>
@@ -23,7 +24,7 @@ python代码中用到一些扩展，需要在cmd下进行安装（参考老师�
 其他的html只需要在开头加上entends语句（见其他html）就可以引入base.html作为模板，并在相应的块填入内容 <br>
 
 ## index.html ##
-目前只有时间显示功能（由flask-moment扩展支持）<br>
+目前只有时间显示功能（由flask-moment扩展支持）和简单的数据交互功能（flask-wtf支持） <br>
 语句
 
     {{ moment(current_time).format('lll') }}
@@ -34,7 +35,13 @@ python代码中用到一些扩展，需要在cmd下进行安装（参考老师�
 
     {{ moment(current_time).fromNow(refresh=True) }}
 显示距离该时刻过去的时间（自动更新，同样可设置格式）<br>
-后端只负责发送时间数据，如何显示由前端决定。<br>
+后端只负责发送时间数据，如何显示由前端决定。<br><br>
+
+语句
+
+    {% if user_id %}
+是Jinja2的控制语句，等价于`{% if user_id is defined %}`。这里的变量名，前后端需要保持一致 <br>
+更多jinja2的控制语句可见https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures <br>
 
 ## 404.html ##
 输入任何无对应html的网址，将跳转到此页面<br>
