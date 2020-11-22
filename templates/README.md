@@ -11,7 +11,11 @@ python代码中用到一些扩展，需要在cmd下进行安装（参考老师�
 &nbsp;&nbsp;&nbsp;&nbsp;计算机需要连接网络 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;会自动安装moment.js，无须另下 <br>
 3. pip install flask-wtf <br>
-&nbsp;&nbsp;&nbsp;&nbsp;web表单处理
+&nbsp;&nbsp;&nbsp;&nbsp;web表单处理 <br>
+4. pip install flask-SQLAlchemy <br>
+&nbsp;&nbsp;&nbsp;&nbsp;pip install Flask-MySQL <br>
+&nbsp;&nbsp;&nbsp;&nbsp;pip install PyMySQL <br>
+&nbsp;&nbsp;&nbsp;&nbsp;连接数据库 <br>
 
 安装扩展完成后，按老师的pdf中的方法，在cmd或pyCharm/vscode等下运行app.py，再用浏览器访问[http://127.0.0.1:5000/](http://127.0.0.1:5000/)等页面即可 （不运行app.py而直接打开html是看不到效果的）<br>
 
